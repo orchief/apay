@@ -1,0 +1,202 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.orchief.pay2</groupId>
+  <artifactId>orchief-pay2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>zhifu</name>
+  
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+       <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency> -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--jsp页面使用jstl标签-->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		</dependency>
+
+		<!--用于编译jsp-->
+		<dependency>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		
+	    <dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>commons</artifactId>
+		    <version>1.3</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/commons-codec-1.3.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>commons-httpclient</artifactId>
+		    <version>3.1</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/commons-httpclient-3.1-alpha1.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>1.1</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/commons-logging-1.1.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>emp</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/emp.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>jce</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/jce.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>jcert</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/jcert.jar</systemPath>
+		</dependency>		
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>jnet</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/jnet.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>jsse</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/jsse.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>payclient</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/payclient.jar</systemPath>
+		</dependency>
+		
+<!-- 		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>1.2.1</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/commons-fileupload-1.2.1.jar</systemPath>
+		</dependency> -->
+		
+<!-- 		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>1.4</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/commons-io-1.4.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.1.1</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/fastjson-1.1.1.jar</systemPath>
+		</dependency> -->
+		
+<!-- 	<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>upacp_sdk</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/upacp_sdk-1.0.0-20150703140550.jar</systemPath>
+		</dependency> -->
+		
+<!-- 	<dependency>
+		    <groupId>com.alipay</groupId>
+		    <artifactId>sdb</artifactId>
+		    <version>1.0</version>
+		    <scope>system</scope>
+		    <systemPath>${project.basedir}/src/main/resources/lib/sdb.jar</systemPath>
+		</dependency> -->
+    </dependencies>
+    
+    <build>
+        <plugins>
+		    <plugin>
+		        <groupId>org.springframework.boot</groupId>
+		        <artifactId>spring-boot-maven-plugin</artifactId>
+		        <version>1.5.7.RELEASE</version>
+		        <configuration>
+		            <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+		        </configuration>
+		    </plugin>
+		    <plugin>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <configuration>
+		            <source>1.8</source>
+		            <target>1.8</target>
+		            <encoding>UTF-8</encoding>
+		            <compilerArguments>
+		                <extdirs>${project.basedir}/src/main/resources/lib</extdirs>
+		            </compilerArguments>
+		        </configuration>
+		    </plugin>
+		</plugins>
+		
+		<resources>
+			<resource>
+		        <directory>${basedir}/src/main/resources</directory>
+		        <filtering>true</filtering>
+		        <includes>
+		            <include>**/*.properties</include>
+		        </includes>
+		   	</resource>
+		    <resource>
+		        <directory>${basedir}/src/main/resources</directory>
+		        <excludes>
+		            <exclude>**/*.properties</exclude>
+		        </excludes>
+		    </resource>
+		</resources>
+    </build>
+    
+  
+</project>
